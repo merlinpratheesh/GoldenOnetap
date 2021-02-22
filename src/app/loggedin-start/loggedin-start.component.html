@@ -25,13 +25,41 @@
     <button  mat-raised-button color="accent" (click)="ArrayfirestoreMF()">Array-Remove</button>
   </div>
 </div-->
-<mat-toolbar color="primary">
-    Birthday App
-    <span fxFlex="grow">
+<mat-grid-list cols="10" rowHeight="5vh">
+  <mat-grid-tile colspan="10" rowspan='1' style="color:#216fdb; width: 100%; background-color:#F2F3F5 ;">
+      <div>
+          MyHeritage...
+      </div>
+      <span fxFlex="grow"></span>
+      <div fxFlex="grow">
+          Birthday App
 
-    </span>
-    <button mat-raised-button color="warn" (click)="developmentservice.logout()"> Log Out </button>
+      </div>
+  </mat-grid-tile>
+
+
+</mat-grid-list>
+
+<mat-toolbar color=#F2F3F5>
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="NavigateNext()"> My Family Tree</button>
+      <button mat-menu-item>MyProfile</button>
+  </mat-menu>
+  <span fxFlex="grow"></span>
+
+
+  <div class="newTree">
+      Build your Family Tree
+  </div>
+  <button mat-raised-button color="warn" (click)="developmentservice.logout()"> Log Out </button>
+
 </mat-toolbar>
+
+
 
 
 <div Style="height:calc(100vh - 64px);" fxLayoutAlign="center center">

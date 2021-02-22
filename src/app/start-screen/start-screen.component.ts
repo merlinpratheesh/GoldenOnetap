@@ -17,7 +17,7 @@ export class StartScreenComponent implements OnInit {
   }
 
   NavigateNext(){
-    this.router.navigate(['/main']);
+    this.router.navigate(['/loggedin']);
   }
   successCallback(data: FirebaseUISignInSuccessWithAuthResult) {
     console.log('successCallback', data);

@@ -15,4 +15,7 @@ export class MainScreenComponent implements OnInit {
   NavigateBack(){
     this.router.navigate(['']);
   }
+  NavigateNext(){
+    this.router.navigate(['/loggedin']);
+  }
 }

@@ -1,173 +1,274 @@
-<mat-toolbar color="primary">
-    Birthday App
-    <span fxFlex="grow">
+<mat-grid-list cols="10" rowHeight="5vh">
+  <mat-grid-tile colspan="10" rowspan='1' style="color:#216fdb; width: 100%; background-color:#F2F3F5 ;" >
+    MyHeritage...
+    <span fxFlex="grow"></span>
+    <div fxLayout="row wrap">
+      <button fxFlex="grow" mat-button [matMenuTriggerFor]="menu">Menu</button>
+      <mat-menu #menu="matMenu">
+        <button  mat-menu-item (click)="NavigateNext()"> Back </button>
+        <button mat-menu-item>MyProfile</button>
+      </mat-menu>
+    </div> 
+  </mat-grid-tile>
 
-    </span>
-    <button mat-raised-button color="warn" (click)="NavigateBack()"> Back </button>
-</mat-toolbar>
-<div fxLayout="column" style="padding:5%;" fxLayoutGap="5%" >
-    <div fxLayoutAlign="space-around center">
+  <mat-grid-tile colspan="2" rowspan='25' style="color:#216fdb; width: 100%; background-color:#F2F3F5 ;" >
+profile
+
+  </mat-grid-tile>
+  <mat-grid-tile colspan="8" rowspan='25' style="color:#216fdb; width: 100%; background-color:#F2F3F5 ;" >
+
+    <div color="primary ; position:relative">
+
+
+      <mat-tab-group style="height: 130vh; width: 180vh;  position: relative;">
+        <mat-tab class="header" style="color:#216fdb ;">
+          <ng-template mat-tab-label>Family Tree</ng-template>
+          <ng-template matTabContent>
   
-      <mat-card fxFlex="20vw">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Name</mat-card-title>
-          <mat-card-subtitle>Location</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            Grand father
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>B'day</button>
-          <button mat-button>Anniversary</button>
-        </mat-card-actions>
-      </mat-card>
+            <div fxLayout="column" style="padding:5%;" fxLayoutGap="5%">
+              <div fxLayoutAlign="space-around center">
   
-  
-      <mat-card fxFlex="20vw">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Name</mat-card-title>
-          <mat-card-subtitle>Kandy, SriLanka</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            Grand Mother
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>B'day</button>
-          <button mat-button>Anniversary</button>
-        </mat-card-actions>
-      </mat-card>
-  
-      <mat-card fxFlex="20vw">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Mr.Namasivayam</mat-card-title>
-          <mat-card-subtitle>Vallam, TamilNadu, India</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            Grand father
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>B'day</button>
-          <button mat-button>Anniversary</button>
-        </mat-card-actions>
-      </mat-card>
+                <mat-card fxFlex="20vw">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Name</mat-card-title>
+                    <mat-card-subtitle>Location</mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <p>
+                      Grand father
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-button>B'day</button>
+                    <button mat-button>Anniversary</button>
+                  </mat-card-actions>
+                </mat-card>
   
   
-      <mat-card fxFlex="20vw">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Mrs.Grace</mat-card-title>
-          <mat-card-subtitle>Vallam, TamilNadu, India</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            Grand Mother
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>B'day</button>
-          <button mat-button>Anniversary</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+                <mat-card fxFlex="20vw">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Name</mat-card-title>
+                    <mat-card-subtitle>Kandy, SriLanka</mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <p>
+                      Grand Mother
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-button>B'day</button>
+                    <button mat-button>Anniversary</button>
+                  </mat-card-actions>
+                </mat-card>
   
-    <div fxLayoutAlign="space-around center">
-      <mat-card fxFlex="20vw">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Mr.Godwin</mat-card-title>
-          <mat-card-subtitle>Kandy, SriLanka</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            Father
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>B'day</button>
-          <button mat-button>Anniversary</button>
-        </mat-card-actions>
-      </mat-card>
+                <mat-card fxFlex="20vw">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Mr.Namasivayam</mat-card-title>
+                    <mat-card-subtitle>Vallam, TamilNadu, India</mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <p>
+                      Grand father
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-button>B'day</button>
+                    <button mat-button>Anniversary</button>
+                  </mat-card-actions>
+                </mat-card>
   
   
-      <mat-card fxFlex="20vw">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Mrs.Rajam</mat-card-title>
-          <mat-card-subtitle>Vallam, TamilNadu, India</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            Mother
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>B'day</button>
-          <button mat-button>Anniversary</button>
-        </mat-card-actions>
-      </mat-card>
+                <mat-card fxFlex="20vw">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Mrs.Grace</mat-card-title>
+                    <mat-card-subtitle>Vallam, TamilNadu, India</mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <p>
+                      Grand Mother
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-button>B'day</button>
+                    <button mat-button>Anniversary</button>
+                  </mat-card-actions>
+                </mat-card>
+              </div>
   
-    </div>
+              <div fxLayoutAlign="space-around center">
+                <mat-card fxFlex="20vw">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Mr.Godwin</mat-card-title>
+                    <mat-card-subtitle>Kandy, SriLanka</mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <p>
+                      Father
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-button>B'day</button>
+                    <button mat-button>Anniversary</button>
+                  </mat-card-actions>
+                </mat-card>
   
-    <div fxLayoutAlign="space-around center">
-      <mat-card fxFlex="20vw">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Mr.Manoj</mat-card-title>
-          <mat-card-subtitle>Vallam, TamilNadu,India</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            Myself
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>B'day</button>
-          <button mat-button>Anniversary</button>
-        </mat-card-actions>
-      </mat-card>
   
-      <mat-card fxFlex="20vw">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Ms.Dhivya</mat-card-title>
-          <mat-card-subtitle>Nagercoil, TamilNadu, India</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            Sister
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>B'day</button>
-          <button mat-button>Anniversary</button>
-        </mat-card-actions>
-      </mat-card>
+                <mat-card fxFlex="20vw">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Mrs.Rajam</mat-card-title>
+                    <mat-card-subtitle>Vallam, TamilNadu, India</mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <p>
+                      Mother
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-button>B'day</button>
+                    <button mat-button>Anniversary</button>
+                  </mat-card-actions>
+                </mat-card>
   
-      <mat-card fxFlex="20vw">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Mr.Vinoj</mat-card-title>
-          <mat-card-subtitle>Nagercoil, TamilNadu, India</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            Brother
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>B'day</button>
-          <button mat-button>Anniversary</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+              </div>
   
+              <div fxLayoutAlign="space-around center">
+                <mat-card fxFlex="20vw">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Mr.Manoj</mat-card-title>
+                    <mat-card-subtitle>Vallam, TamilNadu,India</mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <p>
+                      Myself
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-button>B'day</button>
+                    <button mat-button>Anniversary</button>
+                  </mat-card-actions>
+                </mat-card>
+  
+                <mat-card fxFlex="20vw">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Ms.Dhivya</mat-card-title>
+                    <mat-card-subtitle>Nagercoil, TamilNadu, India</mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <p>
+                      Sister
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-button>B'day</button>
+                    <button mat-button>Anniversary</button>
+                  </mat-card-actions>
+                </mat-card>
+  
+                <mat-card fxFlex="20vw">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Mr.Vinoj</mat-card-title>
+                    <mat-card-subtitle>Nagercoil, TamilNadu, India</mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <p>
+                      Brother
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-button>B'day</button>
+                    <button mat-button>Anniversary</button>
+                  </mat-card-actions>
+                </mat-card>
+              </div>
+  
+            </div>
+          </ng-template>
+        </mat-tab>
+  
+        <mat-tab class="header" style="color:#216fdb">
+          <ng-template mat-tab-label>Memories/Photos</ng-template>
+          <ng-template matTabContent>
+            Memories/Photos
+          </ng-template>
+        </mat-tab>
+        <mat-tab class="header" style="color:#216fdb">
+          <ng-template mat-tab-label>Events</ng-template>
+          <ng-template matTabContent>
+            Events
+          </ng-template>
+        </mat-tab>
+        <mat-tab class="header" style="color:#216fdb">
+          <ng-template mat-tab-label>Add Members</ng-template>
+          <ng-template matTabContent>
+            <h2 class="py-4">Add Profile</h2>
+            <form [formGroup]="names">
+              <div class="form-group row">
+                <label for="brand" class="col-sm-2 col-form-label">profileName</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control"  formControlName="profileName">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="model" class="col-sm-2 col-form-label">email</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control"  formControlName="email">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="model" class="col-sm-2 col-form-label">gender</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control"  formControlName="gender">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="model" class="col-sm-2 col-form-label">areaOfinterest</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control"  formControlName="areaOfinterest">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="model" class="col-sm-2 col-form-label">skills</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" formControlName="skills">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="model" class="col-sm-2 col-form-label">location</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control"  formControlName="location">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-4 offset-sm-2">
+                  <button type="submit" class="btn btn-primary mr-2" (click)="save()">Save</button>
+                  <button type="reset" class="btn btn-outline-primary" (click)="cancel()">Cancel</button>
+                </div>
+              </div>
+            </form>
+          </ng-template>
+        </mat-tab>
+        <mat-tab class="header" style="color:#216fdb">
+          <ng-template mat-tab-label>Settings</ng-template>
+          <ng-template matTabContent>
+            Settings </ng-template>
+        </mat-tab>
+  
+  
+      </mat-tab-group>
   </div>
+
+  </mat-grid-tile>
+
+</mat-grid-list>
+
+
+
